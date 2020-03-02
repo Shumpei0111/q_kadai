@@ -87,6 +87,8 @@ function compareVal(res) {
 
   } else if(res[0] > res[1] + res[2]) {
     var res = "鈍角三角形";
+  } else {
+    var res = "三角形は成り立ちません";
   }
 
   return res;

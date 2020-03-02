@@ -79,6 +79,9 @@ function compareVal(res) {
   } else if(res[0] + res[1] === res[2]) {
     var res = "直角三角形";
 
+  } else if(res[0] === res[1] + res[2]) {
+    var res = "直角二等辺三角形";
+
   } else if(res[0] < res[1] + res[2] && res[1] !== res[2]) {
     var res = "鋭角三角形";
 
@@ -100,6 +103,7 @@ function compareVal(res) {
  * 三角形の定義
  * 正三角形… a = b = c
  * 直角三角形… a^2 + b^2 = c^2
+ * 直角二等辺三角形…
  * 鋭角二等辺三角形… a^2 < b^2 + c^2
  * 鈍角三角形… a^2 > b^2 + c^2
  * 
